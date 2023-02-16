@@ -8,7 +8,7 @@ const data = {
       brand: 'Alkin',
       hp: '13',
       features: 'Auto Shutoff',
-      price: '10.000$',
+      price: 10000,
       countInStock: '3',
     },
     {
@@ -19,7 +19,7 @@ const data = {
       brand: 'Alkin',
       hp: '15',
       features: 'Auto Shutoff',
-      price: '10.000$',
+      price: 10000,
       countInStock: '3',
     },
     {
@@ -30,7 +30,7 @@ const data = {
       brand: 'Alkin',
       hp: '20',
       features: 'Auto Shutoff',
-      price: '10.000$',
+      price: 10000,
       countInStock: '3',
     },
     {
@@ -41,7 +41,7 @@ const data = {
       brand: 'Alkin',
       hp: '22',
       features: 'Auto Shutoff',
-      price: '10.000$',
+      price: 10000,
       countInStock: '3',
     },
     {
@@ -52,7 +52,7 @@ const data = {
       brand: 'Alkin',
       hp: '22',
       features: 'Auto Shutoff',
-      price: '10.000$',
+      price: 10000,
       countInStock: '3',
     },
     {
@@ -63,7 +63,7 @@ const data = {
       brand: 'Alkin',
       hp: '22',
       features: 'Auto Shutoff',
-      price: '10.000$',
+      price: 10000,
       countInStock: '3',
     },
   ],
