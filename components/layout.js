@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Menu } from '@headlessui/react';
 import DropdownLink from './dropdownlink';
 import Cookies from 'js-cookie';
+
 export default function Layout({ title, children }) {
   const { status, data: session } = useSession();
   const { state, dispatch } = useContext(Store);

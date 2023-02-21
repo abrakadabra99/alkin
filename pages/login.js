@@ -1,20 +1,22 @@
+'use client';
 import Layout from '@/components/layout';
 import Link from 'next/link';
 import React, { useEffect } from 'react';
-import { useForm, useFormState } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { signIn, useSession } from 'next-auth/react';
 import { toast } from 'react-toastify';
-import Router, { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import { getError } from '@/utils/error';
+import Cookies from 'js-cookie';
 
 export default function login() {
   const { data: session } = useSession();
 
-  const router = useRouter;
-  const redirect = router.query;
+  const router = useRouter();
+  const { redirect } = router.query;
   useEffect(() => {
     if (session?.user) {
-      Router.push(redirect || '/');
+      router.push(redirect || '/');
     }
   }, [router, session, redirect]);
   const {

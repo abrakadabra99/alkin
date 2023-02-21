@@ -2,11 +2,11 @@ import Link from 'next/link';
 import React, { useContext } from 'react';
 import Image from 'next/image';
 import { Store } from '@/utils/store';
-import Router from 'next/router';
+import { useRouter } from 'next/router';
 
 export default function ProductItem({ product }) {
   const { state, dispatch } = useContext(Store);
-
+  const router = useRouter();
   const AddToCartHandler = () => {
     const existItem = state.cart.cartItems.find((x) => x.slug === product.slug);
     const quantity = existItem ? existItem.quantity + 1 : 1;
@@ -18,7 +18,7 @@ export default function ProductItem({ product }) {
       type: 'CART_ADD_ITEM',
       payload: { ...product, quantity },
     });
-    Router.push('/cart');
+    router.push('/cart');
   };
   return (
     <div className="card">
