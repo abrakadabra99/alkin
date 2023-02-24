@@ -25,6 +25,7 @@ const data = {
       features: 'Auto Shutoff',
       price: 10000,
       countInStock: 30,
+      description: '123123',
     },
     {
       name: 'W32 Mariner',
@@ -36,6 +37,7 @@ const data = {
       features: 'Auto Shutoff',
       price: 10000,
       countInStock: 5,
+      description: '123123',
     },
     {
       name: '524 Canopy',
@@ -47,6 +49,7 @@ const data = {
       features: 'Auto Shutoff',
       price: 10000,
       countInStock: 3,
+      description: '123123',
     },
     {
       name: '526 Canopy',
@@ -58,6 +61,7 @@ const data = {
       features: 'Auto Shutoff',
       price: 10000,
       countInStock: 10,
+      description: '123123',
     },
     {
       name: '527 Diesel',
@@ -69,6 +73,7 @@ const data = {
       features: 'Auto Shutoff',
       price: 10000,
       countInStock: 20,
+      description: '123123',
     },
     {
       name: '700 Chassis',
@@ -80,6 +85,7 @@ const data = {
       features: 'Auto Shutoff',
       price: 10000,
       countInStock: 3,
+      description: '123123',
     },
   ],
 };
